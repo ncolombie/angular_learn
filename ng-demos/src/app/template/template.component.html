@@ -1,0 +1,39 @@
+<p>
+  template works!
+</p>
+
+<p>Calcul : {{2+2}} - mustaches makes code interpolation</p>
+
+<p>
+  mustaches ca call function: {{getName()}}
+</p>
+<nav [textContent]="'Waouwww'"></nav>
+  <nav [textContent]="getContent()  "></nav>
+
+<ul>
+  Users:
+  <li *ngFor="let u of users" > {{u}}</li>
+</ul>
+
+<div *ngIf="users.length >3" >there is a lot of users</div>
+<div *ngIf =" condition()">there is less users</div>
+
+
+<div class ="impressive">this is an impressive div!!</div>
+<div [className]="getImpressiveStyle()"> super impressive!!!</div>
+<div [ngClass]="{banana:users.length>3}"> mega impressive!!!</div>
+
+<div #friend> hello my friend</div>
+<div> the content was : {{friend.textContent}}</div>
+
+<input type="text" value="I am a data" #myInput>
+
+<div> value is :{{ myInput.value}}</div>
+
+
+<button (click) ="noop()">click me </button>
+
+
+<button (click) ="clearUsers()">delete </button>
+
+<button (click) ="cancelDelete()">cancelDelete </button>

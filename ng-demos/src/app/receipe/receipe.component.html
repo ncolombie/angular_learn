@@ -1,0 +1,10 @@
+<p>
+  receipe works!
+</p>
+
+<ul>
+  <li *ngFor="let i of ingredients" (click)="delete(i)">
+      <del *ngIf="isDone(i)">{{i}}</del>
+      <span *ngIf="!isDone(i)">{{i}}</span>
+  </li>
+</ul>
