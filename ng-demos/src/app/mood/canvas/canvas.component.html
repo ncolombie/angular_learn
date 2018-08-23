@@ -1,11 +1,14 @@
 <div>
   <app-tab-list></app-tab-list>
+  <!--
   <app-happy *ngIf="isHappy()"></app-happy>
   <app-soso *ngIf="isSoso()"></app-soso>
-  <app-angry *ngIf="isAngry()">
+  <app-angry *ngIf="isAngry()">  </app-angry>
+-->
+  <!--we factorise in oe pure component-->
+  <app-mood-face [mood]="this.service.mood"></app-mood-face>
 
 
-  </app-angry>
 
 
 
