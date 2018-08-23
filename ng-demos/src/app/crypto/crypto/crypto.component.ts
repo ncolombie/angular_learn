@@ -11,6 +11,7 @@ export class CryptoComponent implements OnInit {
 
 
 
+
   // result= this.service.coins;
   constructor(public service: CryptoService) {
     this.service.fetchCrypto();
