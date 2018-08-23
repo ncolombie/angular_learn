@@ -14,6 +14,9 @@ import { MoodFaceComponent } from './mood/mood-face/mood-face.component';
 import { HappyComponent } from './mood/happy/happy.component';
 import { SosoComponent } from './mood/soso/soso.component';
 import { AngryComponent } from './mood/angry/angry.component';
+import {HttpClientModule} from "@angular/common/http";
+import {CryptoComponent} from "./crypto/crypto/crypto.component";
+
 
 @NgModule({
   declarations: [
@@ -28,10 +31,12 @@ import { AngryComponent } from './mood/angry/angry.component';
     MoodFaceComponent,
     HappyComponent,
     SosoComponent,
-    AngryComponent
+    AngryComponent,
+    CryptoComponent
+
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
