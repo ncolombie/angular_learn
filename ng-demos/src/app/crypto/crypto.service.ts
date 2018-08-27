@@ -2,16 +2,11 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 
-
-
 export type Coin={
   name:string,
   symbol:string,
   price_usd:number;
 }
-
-
-
 @Injectable({
   providedIn: 'root'
 })

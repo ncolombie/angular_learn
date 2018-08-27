@@ -1,0 +1,16 @@
+@keyframes blink {
+  to { color: white; }
+}
+table {
+  color: aqua;
+  width: 75%;
+  margin: auto;
+  border: black solid 5px;
+  background-color: orangered;
+  font-family: "Comic Sans MS";
+  animation: blink 1s steps(2, start) infinite;
+}
+
+.log{
+  font-weight: bold;
+}

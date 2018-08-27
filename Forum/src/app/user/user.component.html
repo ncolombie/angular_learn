@@ -1,0 +1,38 @@
+<ul class="box" xmlns="http://www.w3.org/1999/html">Liste des Users
+  <li *ngFor=" let u of this.service.users">{{u.name}} {{u.admin}}</li>
+</ul>
+
+<div>-------------------------</div>
+<div> list of user components</div>
+<app-user-c *ngFor="let u of this.service.users" [user]="u">  </app-user-c>
+
+
+<div class="log">
+  logged in: {{this.service.logged}}
+</div>
+
+
+
+
+<div>*************************</div>
+Tableau des noms et email des users
+<table class="box">
+  <thead>
+  <th>Name</th>
+  <th>E-Mail</th>
+  </thead>
+  <tbody>
+  <tr *ngFor=" let u of this.service.users">
+
+    <td>{{u.name}}</td>
+    <td>{{u.email}}</td>
+
+  </tr>
+
+
+  </tbody>
+
+
+</table>
+
+
